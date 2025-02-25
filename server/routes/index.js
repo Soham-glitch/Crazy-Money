@@ -1,0 +1,11 @@
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const router = express.Router();
+const userRouter = require("./user");
+const accountRouter = require("./account");
+router.use("/user", userRouter);
+router.use("/account", accountRouter);  
+app.use(express.json());
+app.use(cors());
+module.exports = router;
