@@ -1,9 +1,6 @@
-// //create a mongoose schema
-
-// backend/db.js
+//path-->server/db.js
+//create a mongoose schema
 const mongoose = require("mongoose");
-// const { number } = require("zod");
-// mongoose.connect("mongodb://localhost:27017/payment");
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
   username: {
